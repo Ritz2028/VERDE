@@ -1,0 +1,8 @@
+EnviroCast: Weather & Air Quality Dashboard for Jaipur
+
+EnviroCast is an intuitive Streamlit-based dashboard designed to visualize, analyze, 
+and forecast weather conditions and air quality trends in Jaipur. It integrates pollution 
+and weather datasets, applies machine learning models for prediction, 
+and presents insights through interactive charts and forecasts. 
+The platform also features custom NO₂ heatmap generation using grid-level uploaded CSV data, 
+enabling detailed spatial analysis.
