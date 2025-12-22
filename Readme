@@ -1,8 +1,38 @@
-EnviroCast: Weather & Air Quality Dashboard for Jaipur
+VERDE: Weather & Air Quality Dashboard for Jaipur
 
-EnviroCast is an intuitive Streamlit-based dashboard designed to visualize, analyze, 
+VERDE is an intuitive Streamlit-based dashboard designed to visualize, analyze, 
 and forecast weather conditions and air quality trends in Jaipur. It integrates pollution 
 and weather datasets, applies machine learning models for prediction, 
 and presents insights through interactive charts and forecasts. 
 The platform also features custom NO₂ heatmap generation using grid-level uploaded CSV data, 
 enabling detailed spatial analysis.
+
+Tech Stack:
+
+Python 3.10+
+Pandas, Matplotlib
+scikit-learn, XGBoost, Joblib
+Streamlit for web dashboard
+Custom Python scripts for preprocessing & merging
+
+Features:
+
+CSV Upload
+Upload your cleaned or preprocessed dataset (.csv) for trend visualization.
+Upload a separate NO₂ heatmap grid-level dataset.
+Trend Visualization
+Select any column (e.g., NO₂, PM2.5, Temperature) to generate a time-series chart.
+Easily visualize trends in pollution and climate over time.
+Predictive Modeling
+Use sliders to input:
+Temperature, Max Temp, Min Temp, Precipitation
+Day, Month, Hour
+Predict:
+Nitrogen Dioxide (NO₂) in µg/m³
+Temperature (next hour) in °C
+PM2.5 – Particulate Matter < 2.5µm
+PM10 – Particulate Matter < 10µm
+Carbon Monoxide (CO) in ppm
+NO₂ Heatmap
+Upload a grid-level CSV file  and weather columns.
+Get an interactive NO₂ prediction map across Jiapur.
