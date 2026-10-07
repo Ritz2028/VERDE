@@ -1,34 +1,35 @@
-VERDE: Weather & Air Quality Dashboard for Jaipur
+# VERDE — Weather & Air Quality Dashboard for Jaipur
 
-VERDE is an intuitive Streamlit-based dashboard designed to visualize, analyze, 
-and forecast weather conditions and air quality trends in Jaipur. 
-It integrates pollution and weather datasets, applies machine learning models for prediction, 
-and presents insights through interactive charts and forecasts.
-The platform also features custom NO₂ heatmap generation using grid-level uploaded CSV data, 
-enabling detailed spatial analysis.
+VERDE is a Streamlit-based dashboard for analyzing weather and air-quality
+data and generating machine-learning-based predictions.
 
-Tech Stack
-Python 3.10+
-Pandas, Matplotlib
-scikit-learn, XGBoost, Joblib
-Streamlit for web dashboard
+## Features
 
-Features:
+- Upload CSV datasets for trend analysis
+- Interactive pollution and weather visualizations
+- NO₂ prediction using Random Forest regression
+- PM2.5 prediction using Random Forest regression
+- PM10 prediction using Random Forest regression
+- CO prediction using Random Forest regression
+- Next-day temperature prediction using XGBoost
+- Interactive NO₂ spatial prediction maps
+- Folium and Plotly map visualizations
+- Custom latitude/longitude grid uploads
 
-CSV Upload
-Upload your cleaned or preprocessed dataset 
-Upload a separate NO₂ heatmap grid-level dataset 
-Trend Visualization
-Select any column to generate a time-series chart.
-Easily visualize trends in pollution and climate over time.
-Predictive Modeling
+## Tech Stack
 
-Predict:
-Nitrogen Dioxide (NO₂) in µg/m³
-Temperature (next hour) in °C
-PM2.5 – Particulate Matter < 2.5µm
-PM10 – Particulate Matter < 10µm
-Carbon Monoxide (CO) in ppm
-NO₂ Heatmap
-Upload a grid-level CSV file  containing lat/lon and weather columns.
-Choose between Folium or Plotly map rendering.
+- Python
+- Pandas
+- Scikit-learn
+- Random Forest
+- XGBoost
+- Streamlit
+- Folium
+- Plotly
+
+## Spatial Visualization
+
+The application generates NO₂ predictions across a configurable
+latitude/longitude grid using environmental input features such as
+temperature, precipitation, maximum temperature, minimum temperature,
+day, month and hour.
