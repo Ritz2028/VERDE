@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # Define Jaipur grid ranges
-lats = np.arange(12.85, 13.20, 0.005)
-lons = np.arange(77.45, 77.80, 0.005)
+lats = np.arange(26.75, 27.15, 0.005)
+lons = np.arange(75.65, 76.05, 0.005)
 
 # Fill dummy (reasonable) values for features
 data = []
